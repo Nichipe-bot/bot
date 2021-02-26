@@ -1,5 +1,6 @@
 import discord
-
+from discord.ext import commands
+import os
 
 class chatbot(discord.Client):
     # 프로그램이 처음 실행되었을 때 초기 구성
