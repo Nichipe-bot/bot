@@ -23,7 +23,7 @@ class chatbot(discord.Client):
             return None
         
         # message.content = message의 내용
-        if message.content == "ㄹㅇㅋㅋ":
+        if "ㄹㅇㅋㅋ" in message.content:
             # 현재 채널을 받아옴
             channel = message.channel
             # 답변 내용 구성
