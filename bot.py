@@ -42,8 +42,8 @@ class chatbot(discord.Client):
             return None
         
         if "<:fdzz:824262268447490048>" in message.content:
-            # 현재 채널을 받아옴
-            await message.add_reaction("824262268447490048")
+            emoji = get(bot.get_all_emojis(), name='fdzz') # 이모지 객체 생성
+            await bot.add_reaction(message, emoji) # 이모지 추가
             return None
 
 
