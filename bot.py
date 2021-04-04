@@ -31,6 +31,15 @@ class chatbot(discord.Client):
             # msg에 지정된 내용대로 메시지를 전송
             await channel.send(msg)
             return None
+        
+        if "<:fdzz:824262268447490048>" in message.content:
+            # 현재 채널을 받아옴
+            channel = message.channel
+            # 답변 내용 구성
+            msg = "<:fdzz:824262268447490048>"
+            # msg에 지정된 내용대로 메시지를 전송
+            await channel.send(msg)
+            return None
 
 
 # 프로그램이 실행되면 제일 처음으로 실행되는 함수
