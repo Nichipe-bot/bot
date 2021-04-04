@@ -32,15 +32,13 @@ class chatbot(discord.Client):
             await channel.send(msg)
             return None
         
-        if "<:fdzz:824262268447490048>" in message.content:
+        if "<:fdzz:828259889461461022>" in message.content:
             # 현재 채널을 받아옴
             channel = message.channel
             # 답변 내용 
             # msg에 지정된 내용대로 메시지를 전송
             # emoji = get(bot.get_all_emojis(), name='fdzz') # 이모지 객체
-            await channel.send("<:fdzz:824262268447490048>")
-            emoji = get(bot.get_all_emojis(), name='fdzz')
-            await bot.add_reaction(message, emoji)
+            await channel.send("<:fdzz:828259889461461022>")
             return None
         
 
