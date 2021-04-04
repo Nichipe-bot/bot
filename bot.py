@@ -43,7 +43,7 @@ class chatbot(discord.Client):
         
         if "<:fdzz:824262268447490048>" in message.content:
             # 현재 채널을 받아옴
-            add_reaction(<:fdzz:824262268447490048>)
+            message.add_reaction(<:fdzz:824262268447490048>)
             return None
 
 
