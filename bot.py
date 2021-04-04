@@ -38,9 +38,9 @@ class chatbot(discord.Client):
             # 답변 내용 
             # msg에 지정된 내용대로 메시지를 전송
             # emoji = get(bot.get_all_emojis(), name='fdzz') # 이모지 객체
-            for emoji in emojis.keys(824262268447490048)
             await channel.send("<:fdzz:824262268447490048>")
-            await msg.add_reaction(emojis[emoji]) # 이모지 추가
+            emoji = get(bot.get_all_emojis(), name='fdzz')
+            await bot.add_reaction(message, emoji)
             return None
         
 
