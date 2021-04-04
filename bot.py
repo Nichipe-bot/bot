@@ -35,16 +35,14 @@ class chatbot(discord.Client):
         if "<:fdzz:824262268447490048>" in message.content:
             # 현재 채널을 받아옴
             channel = message.channel
-            # 답변 내용 구성
-            msg = "<:fdzz:824262268447490048>"
+            # 답변 내용 
             # msg에 지정된 내용대로 메시지를 전송
-            await channel.send(msg)
+            # emoji = get(bot.get_all_emojis(), name='fdzz') # 이모지 객체
+            for emoji in emojis.keys(824262268447490048)
+            await channel.send("<:fdzz:824262268447490048>")
+            await msg.add_reaction(emojis[emoji]) # 이모지 추가
             return None
         
-        if "<:fdzz:824262268447490048>" in message.content:
-            emoji = get(bot.get_all_emojis(), name='fdzz') # 이모지 객체
-            await message.content.add_reaction(emoji) # 이모지 추가
-            return None
 
 
 # 프로그램이 실행되면 제일 처음으로 실행되는 함수
