@@ -39,7 +39,7 @@ class chatbot(discord.Client):
             msg = "'됬'은 서버 금지어입니다"
             # msg에 지정된 내용대로 메시지를 전송
             await message.delete()
-            await channel.send(msgg)
+            await channel.send(msg)
             return None
         
         if "<:fdzz:828259889461461022>" in message.content:
