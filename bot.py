@@ -32,6 +32,16 @@ class chatbot(discord.Client):
             await channel.send(msg)
             return None
         
+        if "됬" in message.content:
+            # 현재 채널을 받아옴
+            channel = message.channel
+            # 답변 내용 구성
+            msgg = "'됬'은 서버 금지어입니다"
+            # msg에 지정된 내용대로 메시지를 전송
+            await message.delete()
+            await channel.send(msgg)
+            return None
+        
         if "<:fdzz:828259889461461022>" in message.content:
             # 현재 채널을 받아옴
             channel = message.channel
